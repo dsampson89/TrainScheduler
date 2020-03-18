@@ -45,12 +45,24 @@ $("#add-train-btn").on("click", function(event){
     $("#train-time-input").val("");
     $("#frequency-input").val("");
 });
-
+// event to add train to Firbase database
 database.ref().on("child_added", function(childSnapshot) {
     console.log(childSnapshot.val());
 
+    //Variable Stoarage
     var txName = childSnapshot.val().name;
     var txDestination = childSnapshot.val().destination;
     var txTime = childSnapshot.val().time;
     var txFrequency = childSnapshot.val().frequency;
-});    
+
+    //Train info
+    console.log(txName);
+    console.log(txDestination);
+    console.log(txTime);
+    console.log(txFrequency);
+
+    var 
+
+
+});
+
