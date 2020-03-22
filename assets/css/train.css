@@ -1,0 +1,19 @@
+body{
+    background: url(../images/double-bubble.png);
+}
+
+
+.jumbotron{
+    background: url(../images/train.webp);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: right;
+    color: white;
+}
+
+.card-header{
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    
+}
